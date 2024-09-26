@@ -1,8 +1,15 @@
 function range(start, end) {
     let result = [];
+
+    // Make sure the start is always less than or equal to end
+    if (start > end) {
+        return result; // Return empty array if start is greater than end
+    }
+
     for (let i = start; i <= end; i++) {
         result.push(i);
     }
+
     return result;
 }
 
